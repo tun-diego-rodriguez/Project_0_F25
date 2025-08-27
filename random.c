@@ -1,11 +1,11 @@
 #include <stdlib.h>
 
-char rand_string(char *stringSize, size_t size)
+char rand_string(char *outputString, size_t size)
 {
     const char charSet[] = "abcdefghijklmnopqrstuvwxyz";
 
     for (int i = 0; i < size; i++)
     {
-        stringSize[i] = charSet[rand() % 26];
+        outputString[i] = charSet[rand() % 26];
     }
 }
